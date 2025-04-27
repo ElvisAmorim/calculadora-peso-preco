@@ -20,7 +20,7 @@ Aplicação web para facilitar na escolha do peso e preço de um produto no supe
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/ElvisAmorim/controle-combustivel-veiculo/refs/heads/main/print.png)
+![App Screenshot](https://github.com/ElvisAmorim/calculadora-peso-preco/blob/main/print.png)
 
 
 ## Funcionalidades
