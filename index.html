@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso e Preço</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body class="">
+    
+    <header class="container-fluid text-center bg-primary p-2">
+        <h1 class="text-white">Peso e Preço</h1>
+        <h6 class="text-white">Calculadora de preço por medida</h6>
+    </header>
+
+    <main>
+        <div class="container p-3">
+            <div class="row">
+                <div class="input-group">
+                    <i class="bi bi-info-circle p-1"
+                        tabindex="0"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Ex.: 90g, digite 90 ou 1kg e 200g, digite 1,200">
+                    </i>
+                    <input type="number" class="form-control" id="pesoVolume" placeholder="Informe (g/ml)" min="0" step="any">
+                    <input type="number" class="form-control" id="preco" placeholder="Preço (R$)" min="0" step="any">
+                    <button class="btn btn-primary" id="adicionarProduto">Adicionar Produto</button>        
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <p class="text-body-secondary">Abaixo os itens adicionados e o vencedor!</p>
+        </div>
+
+        <div class="container p-2">
+            <div class="row" id="listaProdutos">
+                <!-- Aqui os cards serão inseridos dinamicamente via JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Card vencedor -->
+        <div class="container text-center">
+            <div class="row" id="resultadoFinal" style="display: none;">
+                <hr>
+                <div class="col p-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                    <h4 class="card-title">🏆 Produto vencedor</h4>
+                    <p class="card-text" id="textoVencedor"></p>
+                    <button class="btn btn-outline-primary mt-3" id="novoCalculo">Novo Cálculo</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>     
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <!-- JavaScript Local -->
+    <script src="js/app.js"></script>
+
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+</body>
+</html>
